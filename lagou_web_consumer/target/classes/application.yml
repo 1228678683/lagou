@@ -1,15 +1,24 @@
 server:
-  port: 8005
+  port: 80
   servlet:
     context-path: /
 spring:
-  application:   #定义服务名称
-    name: web_consumer
+  mvc:
+    view:
+      prefix: /public/
+      suffix: .json
+  #application:   #定义服务名称
+    #name: web_consumer
+  resources:
+    static-locations: classpath:/static/  #配置静态资源路径
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7000/eureka
-  instance:
-    instance-id: web_consumer         #定义微服务的名称
-    prefer-ip-address: true                        #是否显示IP和端口
+
+
+
+#eureka:
+  #client:
+    #service-url:
+      #defaultZone: http://localhost:7000/eureka
+  #instance:
+    #instance-id: web_consumer         #定义微服务的名称
+    #prefer-ip-address: true                        #是否显示IP和端口
