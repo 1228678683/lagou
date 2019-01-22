@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: lagou_sso_provider
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: PHP
+Implementation-Vendor-Id: com.lagou
+Build-Jdk: 1.8.0_111
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/lagou/lagou_sso_provider
+Created-By: Maven Integration for Eclipse
+
