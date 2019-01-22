@@ -1,10 +1,10 @@
 var youdao_conv_host = window.youdao_conv_host || "conv.youdao.com";
 var youdao = window.youdao || {};
 youdao.param_names = ["youdao_conv_id", "youdao_conv_label", "youdao_conv_value", "youdao_order_id", "youdao_passport", "youdao_conv_params"];
-youdao.escape = function(a) {
+youdao.escape = function (a) {
     return a == null ? "" : escape(a.toString())
 };
-youdao.concat = function(b, a) {
+youdao.concat = function (b, a) {
     a = youdao.escape(a);
     if ("" != a) {
         b = youdao.escape(b);
@@ -14,11 +14,11 @@ youdao.concat = function(b, a) {
     }
     return ""
 };
-youdao.protocol = function() {
+youdao.protocol = function () {
     var a = document;
     return a && a.location && a.location.protocol && "https:" == a.location.protocol.toString().toLowerCase() ? "https:" : "http:"
 };
-youdao.formatObj = function(b) {
+youdao.formatObj = function (b) {
     var a = [];
     if (b) {
         for (k in b) {
@@ -29,7 +29,7 @@ youdao.formatObj = function(b) {
     }
     return a.join("-")
 };
-youdao.formatArray = function(c) {
+youdao.formatArray = function (c) {
     var b = "";
     if (c && c.length && c.length > 0) {
         for (var d = 0; d < c.length; d++) {
@@ -41,7 +41,7 @@ youdao.formatArray = function(c) {
     }
     return b.length > 0 ? b.substr(0, b.length - 1) : ""
 };
-youdao.convertId = function(b) {
+youdao.convertId = function (b) {
     var a = {};
     a[1026] = 242527;
     a[1030] = 224890;
@@ -62,10 +62,10 @@ youdao.convertId = function(b) {
     }
     return c
 };
-youdao.envInfo = function() {
+youdao.envInfo = function () {
     return ""
 };
-youdao.urlInfo = function(c) {
+youdao.urlInfo = function (c) {
     var b = window;
     var g = document;
     var e = g.referrer == null ? "" : g.referrer.toString().substring(0, 256);
@@ -74,11 +74,11 @@ youdao.urlInfo = function(c) {
     a += youdao.concat("url", f + c);
     return a
 };
-youdao.loc = function() {
+youdao.loc = function () {
     var a = window;
     var c = document;
     var b = c.location;
-    if ( typeof (youdao_url_type) == "undefined" || youdao_url_type == null) {
+    if (typeof (youdao_url_type) == "undefined" || youdao_url_type == null) {
         youdao_url_type = 0
     }
     if (youdao_url_type == 0) {
@@ -88,7 +88,7 @@ youdao.loc = function() {
             b = c.referrer && "" != c.referrer ? c.referrer : c.location
         } else {
             if (youdao_url_type == 2) {
-                if ( typeof (youdao_virtual_url) == "undefined" || youdao_virtual_url == null || youdao_virtual_url == "") {
+                if (typeof (youdao_virtual_url) == "undefined" || youdao_virtual_url == null || youdao_virtual_url == "") {
                     b = a && a.top && a.top.location && "" != a.top.location ? a.top.location : c.location
                 } else {
                     if (youdao_virtual_url.charAt(0) != "/") {
@@ -106,12 +106,12 @@ youdao.loc = function() {
     b = b == null ? "" : b.toString().substring(0, 256);
     return b
 };
-youdao.mapUrlPattern = function(g) {
+youdao.mapUrlPattern = function (g) {
     var a = {
-        label : "",
-        value : ""
+        label: "",
+        value: ""
     };
-    if ( typeof (youdao_conv_url_map) != "undefined" && youdao_conv_url_map) {
+    if (typeof (youdao_conv_url_map) != "undefined" && youdao_conv_url_map) {
         for (var b in youdao_conv_url_map) {
             if ("" != b) {
                 var f = new RegExp(b, "ig");
@@ -121,7 +121,7 @@ youdao.mapUrlPattern = function(g) {
                         try {
                             a.label = c[0];
                             a.value = c[1]
-                        } catch(d) {
+                        } catch (d) {
                         }
                         return a
                     }
@@ -132,7 +132,7 @@ youdao.mapUrlPattern = function(g) {
     }
     return a
 };
-youdao.serviceUrl = function(g) {
+youdao.serviceUrl = function (g) {
     var f;
     var c = "/conv/";
     var j = "";
@@ -145,9 +145,9 @@ youdao.serviceUrl = function(g) {
                 h = youdao.convertId(h);
                 f = h
             } else if ("youdao_conv_label" == a[d] && ((!h) || "" == h)) {
-                    var b = youdao.mapUrlPattern(e);
-                    h = b.label;
-                    j += youdao.concat("youdao_conv_value", b.value)
+                var b = youdao.mapUrlPattern(e);
+                h = b.label;
+                j += youdao.concat("youdao_conv_value", b.value)
             }
             j += youdao.concat(a[d], h)
         }
@@ -155,14 +155,14 @@ youdao.serviceUrl = function(g) {
     j = youdao.protocol() + "//" + youdao_conv_host + c + f + "/conv.s?random=" + (new Date()).getTime() + j;
     return j + youdao.urlInfo(g)
 };
-youdao.pageView = function() {
+youdao.pageView = function () {
     youdao.imageRequest(youdao.serviceUrl(""));
-    if ( typeof youdao_record_click != "undefined" && youdao_record_click) {
+    if (typeof youdao_record_click != "undefined" && youdao_record_click) {
         var a = document;
         a.addEventListener ? a.addEventListener("click", youdao.click, false) : a.attachEvent("onclick", youdao.click)
     }
 };
-youdao.click = function(d) {
+youdao.click = function (d) {
     if (youdao_record_click == "undefined" || !youdao_record_click) {
         return
     }
@@ -183,32 +183,32 @@ youdao.click = function(d) {
     }
     youdao.imageRequest(youdao.serviceUrl(b))
 };
-youdao.cmImageRequest = function() {
+youdao.cmImageRequest = function () {
     var a = youdao_conv_id || "EADCU";
     var b = "cm_" + (+new Date());
     youdao.img
     youdao.img = window[b] = new Image(1, 1);
     youdao.img.src = "http://dsp.youdao.com/cf.gif?source=" + a + "&r=" + (new Date()).getTime() + "&dgul=1559324";
     youdao.img.style.display = 'none';
-    youdao.img.onload = function() {
+    youdao.img.onload = function () {
         window[b] = null
     };
-    youdao.img.onerror = function() {
+    youdao.img.onerror = function () {
         window[b] = null
     };
     youdao.img = null
 };
-youdao.imageRequest = function(b) {
+youdao.imageRequest = function (b) {
     var c = "log_" + (+new Date());
     youdao.img
     youdao.img = window[c] = new Image(1, 1);
     youdao.img.src = b;
     youdao.img.style.display = 'none';
-    youdao.img.onload = function() {
+    youdao.img.onload = function () {
         window[c] = null;
         youdao.cmImageRequest()
     };
-    youdao.img.onerror = function() {
+    youdao.img.onerror = function () {
         window[c] = null;
         youdao.cmImageRequest()
     };

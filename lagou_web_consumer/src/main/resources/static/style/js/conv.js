@@ -1,5 +1,5 @@
 var youdao = window.youdao || {};
-(function() {
+(function () {
     var a = document;
     youdao.script = a.createElement('script');
     youdao.script.type = 'text/javascript';
