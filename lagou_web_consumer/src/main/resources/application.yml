@@ -3,8 +3,18 @@ server:
   servlet:
     context-path: /
 spring:
+  mvc:
+    view:
+      prefix: /public/
+      suffix: .json
   application:   #定义服务名称
     name: web_consumer
+  resources:
+    static-locations: classpath:/static/  #配置静态资源路径
+
+
+
+
 
 eureka:
   client:
