@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://172.242.4.71:7000/eureka
+      defaultZone: http://localhost:7000/eureka
   instance:
     instance-id: web_consumer-8083         #定义微服务的名称
     prefer-ip-address: true                        #是否显示IP和端口
