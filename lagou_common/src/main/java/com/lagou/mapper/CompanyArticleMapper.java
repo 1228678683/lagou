@@ -1,8 +1,9 @@
 package com.lagou.mapper;
 
 
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lagou.pojo.CompanyArticle;
+import com.lagou.pojo.CompanyBasic;
 
-public interface CompanyArticleMapper {
+public interface CompanyArticleMapper extends BaseMapper<CompanyArticle> {
 }

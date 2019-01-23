@@ -1,5 +1,9 @@
 package com.lagou.mapper;
 
 
-public interface ResumeEducationExperienceMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lagou.pojo.CompanyBasic;
+import com.lagou.pojo.ResumeEducationExperience;
+
+public interface ResumeEducationExperienceMapper extends BaseMapper<ResumeEducationExperience> {
 }

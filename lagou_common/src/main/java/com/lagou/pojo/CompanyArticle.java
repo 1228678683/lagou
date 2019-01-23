@@ -1,6 +1,15 @@
 package com.lagou.pojo;
 
-public class CompanyArticle extends CompanyArticleKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+@Data
+@Accessors(chain=true)
+@TableName("company_article")
+public class CompanyArticle  implements Serializable {
+    private static final long serialVersionUID = -4460236806616985364L;
     private String title;
 
     private String url;

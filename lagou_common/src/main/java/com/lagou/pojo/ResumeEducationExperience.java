@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class ResumeEducationExperience extends ResumeEducationExperienceKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("resume_education_experience")
+public class ResumeEducationExperience implements Serializable {
+    private static final long serialVersionUID = 1558304070203633376L;
     private String schoolName;
 
     private String education;
@@ -13,51 +23,5 @@ public class ResumeEducationExperience extends ResumeEducationExperienceKey {
 
     private Integer eduid;
 
-    public String getSchoolName() {
-        return schoolName;
-    }
 
-    public void setSchoolName(String schoolName) {
-        this.schoolName = schoolName;
-    }
-
-    public String getEducation() {
-        return education;
-    }
-
-    public void setEducation(String education) {
-        this.education = education;
-    }
-
-    public String getProfessional() {
-        return professional;
-    }
-
-    public void setProfessional(String professional) {
-        this.professional = professional;
-    }
-
-    public Integer getStartYear() {
-        return startYear;
-    }
-
-    public void setStartYear(Integer startYear) {
-        this.startYear = startYear;
-    }
-
-    public Integer getEndyear() {
-        return endyear;
-    }
-
-    public void setEndyear(Integer endyear) {
-        this.endyear = endyear;
-    }
-
-    public Integer getEduid() {
-        return eduid;
-    }
-
-    public void setEduid(Integer eduid) {
-        this.eduid = eduid;
-    }
 }

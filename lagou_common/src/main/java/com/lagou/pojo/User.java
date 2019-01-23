@@ -1,8 +1,16 @@
 package com.lagou.pojo;
 
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-public class User {
+import java.io.Serializable;
+import java.util.Date;
+@Data
+@Accessors(chain=true)
+@TableName("user")
+public class User implements Serializable {
+    private static final long serialVersionUID = -6298764842522697913L;
     private Integer id;
 
     private String email;

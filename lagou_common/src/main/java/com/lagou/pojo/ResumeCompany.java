@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class ResumeCompany extends ResumeCompanyKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("resume_company")
+public class ResumeCompany implements Serializable {
+    private static final long serialVersionUID = 8790452334805198698L;
     private Integer status;
 
     private Integer transpond;

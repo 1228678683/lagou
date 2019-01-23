@@ -1,10 +1,18 @@
 package com.lagou.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-public class UserExample {
+@Data
+@Accessors(chain=true)
+@TableName("user_example")
+public class UserExample implements Serializable {
+    private static final long serialVersionUID = -63685531664577794L;
     protected String orderByClause;
 
     protected boolean distinct;

@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class ResumeProjectExperience extends ResumeProjectExperienceKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("resume_project_experience")
+public class ResumeProjectExperience implements Serializable {
+    private static final long serialVersionUID = 8269306387898991696L;
     private String projectName;
 
     private String positionName;

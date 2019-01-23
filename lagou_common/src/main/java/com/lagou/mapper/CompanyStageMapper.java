@@ -1,12 +1,10 @@
 package com.lagou.mapper;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lagou.pojo.CompanyBasic;
 import com.lagou.pojo.CompanyStage;
-import com.lagou.pojo.CompanyStageExample;
-import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
-
-public interface CompanyStageMapper {
+public interface CompanyStageMapper extends BaseMapper<CompanyStage> {
 
 }

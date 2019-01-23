@@ -1,8 +1,17 @@
 package com.lagou.pojo;
 
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-public class CompanyBasic extends CompanyBasicKey {
+import java.io.Serializable;
+import java.util.Date;
+@Data
+@Accessors(chain=true)
+@TableName("company_basic")
+public class CompanyBasic  implements Serializable {
+
+    private static final long serialVersionUID = -4748585189716765804L;
     private String companyshortname;
 
     private String companyfeatures;
@@ -12,44 +21,4 @@ public class CompanyBasic extends CompanyBasicKey {
     private Integer successfulNumber;
 
     private Date datatime;
-
-    public String getCompanyshortname() {
-        return companyshortname;
-    }
-
-    public void setCompanyshortname(String companyshortname) {
-        this.companyshortname = companyshortname;
-    }
-
-    public String getCompanyfeatures() {
-        return companyfeatures;
-    }
-
-    public void setCompanyfeatures(String companyfeatures) {
-        this.companyfeatures = companyfeatures;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public Integer getSuccessfulNumber() {
-        return successfulNumber;
-    }
-
-    public void setSuccessfulNumber(Integer successfulNumber) {
-        this.successfulNumber = successfulNumber;
-    }
-
-    public Date getDatatime() {
-        return datatime;
-    }
-
-    public void setDatatime(Date datatime) {
-        this.datatime = datatime;
-    }
 }

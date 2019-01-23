@@ -1,13 +1,15 @@
 package com.lagou.pojo;
 
-public class DirectoryTwo extends DirectoryTwoKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("directory_two")
+public class DirectoryTwo implements Serializable {
+    private static final long serialVersionUID = -5886318830304653348L;
     private String name;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

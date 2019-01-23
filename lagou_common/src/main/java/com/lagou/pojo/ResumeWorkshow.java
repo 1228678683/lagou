@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class ResumeWorkshow extends ResumeWorkshowKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("resume_workshow")
+public class ResumeWorkshow implements Serializable {
+    private static final long serialVersionUID = 6127442499442564082L;
     private String url;
 
     private String workname;

@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class ResumeExpect extends ResumeExpectKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("resume_expect")
+public class ResumeExpect implements Serializable {
+    private static final long serialVersionUID = -2725061952393395971L;
     private String city;
 
     private String positionType;

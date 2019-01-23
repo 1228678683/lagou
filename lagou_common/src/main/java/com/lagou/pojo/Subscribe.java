@@ -1,8 +1,16 @@
 package com.lagou.pojo;
 
-import java.math.BigDecimal;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-public class Subscribe extends SubscribeKey {
+import java.io.Serializable;
+import java.math.BigDecimal;
+@Data
+@Accessors(chain=true)
+@TableName("subscribe")
+public class Subscribe implements Serializable {
+    private static final long serialVersionUID = -8455458310255179815L;
     private String sendmailper;
 
     private String email;

@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class Slideshow {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("slideshow")
+public class Slideshow implements Serializable {
+    private static final long serialVersionUID = -3389616051345660660L;
     private Integer id;
 
     private String banner;

@@ -1,6 +1,16 @@
 package com.lagou.pojo;
 
-public class CompanyProfileBaseInfo extends CompanyProfileBaseInfoKey {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("company_profile_base_info")
+public class CompanyProfileBaseInfo  implements Serializable {
+    private static final long serialVersionUID = 4893680833605558808L;
     private String city;
 
     private String industryField;
@@ -8,36 +18,4 @@ public class CompanyProfileBaseInfo extends CompanyProfileBaseInfoKey {
     private Double companySize;
 
     private String companyUrl;
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getIndustryField() {
-        return industryField;
-    }
-
-    public void setIndustryField(String industryField) {
-        this.industryField = industryField;
-    }
-
-    public Double getCompanySize() {
-        return companySize;
-    }
-
-    public void setCompanySize(Double companySize) {
-        this.companySize = companySize;
-    }
-
-    public String getCompanyUrl() {
-        return companyUrl;
-    }
-
-    public void setCompanyUrl(String companyUrl) {
-        this.companyUrl = companyUrl;
-    }
 }

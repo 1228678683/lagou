@@ -1,6 +1,15 @@
 package com.lagou.pojo;
 
-public class CompanyStage {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+@Data
+@Accessors(chain=true)
+@TableName("company_stage")
+public class CompanyStage implements Serializable {
+    private static final long serialVersionUID = -5818983254251807922L;
     private Integer id;
 
     private String financestage;

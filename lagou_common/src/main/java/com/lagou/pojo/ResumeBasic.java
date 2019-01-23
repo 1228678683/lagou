@@ -1,8 +1,16 @@
 package com.lagou.pojo;
 
-import java.util.Date;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
 
-public class ResumeBasic extends ResumeBasicKey {
+import java.io.Serializable;
+import java.util.Date;
+@Data
+@Accessors(chain=true)
+@TableName("resume_basic")
+public class ResumeBasic implements Serializable {
+    private static final long serialVersionUID = 5753611018016485051L;
     private String name;
 
     private String sex;
@@ -21,75 +29,5 @@ public class ResumeBasic extends ResumeBasicKey {
 
     private Date updatetime;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getHighestEducation() {
-        return highestEducation;
-    }
-
-    public void setHighestEducation(String highestEducation) {
-        this.highestEducation = highestEducation;
-    }
-
-    public String getWorkYear() {
-        return workYear;
-    }
-
-    public void setWorkYear(String workYear) {
-        this.workYear = workYear;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public Date getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(Date updatetime) {
-        this.updatetime = updatetime;
-    }
 }

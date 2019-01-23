@@ -1,33 +1,20 @@
 package com.lagou.pojo;
 
-public class CompanyLabel {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("company_label")
+public class CompanyLabel implements Serializable {
+    private static final long serialVersionUID = -8030700996482951575L;
     private Integer id;
 
     private Integer companyId;
 
     private String labels;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
-    public String getLabels() {
-        return labels;
-    }
-
-    public void setLabels(String labels) {
-        this.labels = labels;
-    }
 }

@@ -1,5 +1,8 @@
 package com.lagou.mapper;
 
 
-public interface DirectoryTwoMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lagou.pojo.DirectoryTwo;
+
+public interface DirectoryTwoMapper extends BaseMapper<DirectoryTwo> {
 }

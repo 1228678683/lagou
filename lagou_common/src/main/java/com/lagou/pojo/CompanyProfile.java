@@ -1,33 +1,21 @@
 package com.lagou.pojo;
 
-public class CompanyProfile {
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+
+@Data
+@Accessors(chain=true)
+@TableName("company_profile")
+public class CompanyProfile implements Serializable {
+    private static final long serialVersionUID = -1527139882692575510L;
     private Integer id;
 
     private Integer companyId;
 
     private String companyProfile;
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
-    public String getCompanyProfile() {
-        return companyProfile;
-    }
-
-    public void setCompanyProfile(String companyProfile) {
-        this.companyProfile = companyProfile;
-    }
 }
