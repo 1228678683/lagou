@@ -4,18 +4,17 @@ server:
     context-path: /
 spring:
   #application:   #定义服务名称
-    #name: web_consumer
+  #name: web_consumer
   resources:
     static-locations: classpath:/static/  #配置静态资源路径
-  groovy:
-    template:
-      cache: false #禁用模板缓存
-      check-template-location: true #检测模板是否存在
-      content-type: text/html #参数的值
-      enabled: true #启动MVC视图分辨率
-      charset: utf-8 #模板编码
-      prefix: classpath:/templates/ #模板前缀
-      suffix: .html #模板后缀
+  thymeleaf:
+    cache: false #禁用模板缓存
+    check-template-location: true #检测模板是否存在
+    content-type: text/html #参数的值
+    enabled: true #启动MVC视图分辨率
+    prefix: classpath:/templates/ #模板前缀
+    suffix: .html #模板后缀
+    mode: LEGACYHTML5
 
 
 

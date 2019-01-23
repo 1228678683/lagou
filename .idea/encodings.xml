@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_company_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_company_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_config_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_eureka_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_resume_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_resume_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_search_aip" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_search_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_sso_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_sso_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_web_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_web_consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lagou_web_provider" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lagou.iml" filepath="$PROJECT_DIR$/lagou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_common/lagou_common.iml" filepath="$PROJECT_DIR$/lagou_common/lagou_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_company_api/lagou_company_api.iml" filepath="$PROJECT_DIR$/lagou_company_api/lagou_company_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_company_provider/lagou_company_provider.iml" filepath="$PROJECT_DIR$/lagou_company_provider/lagou_company_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_config_server/lagou_config_server.iml" filepath="$PROJECT_DIR$/lagou_config_server/lagou_config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_eureka_server/lagou_eureka_server.iml" filepath="$PROJECT_DIR$/lagou_eureka_server/lagou_eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_resume_api/lagou_resume_api.iml" filepath="$PROJECT_DIR$/lagou_resume_api/lagou_resume_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_resume_provider/lagou_resume_provider.iml" filepath="$PROJECT_DIR$/lagou_resume_provider/lagou_resume_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_search_aip/lagou_search_aip.iml" filepath="$PROJECT_DIR$/lagou_search_aip/lagou_search_aip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_search_provider/lagou_search_provider.iml" filepath="$PROJECT_DIR$/lagou_search_provider/lagou_search_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_sso_api/lagou_sso_api.iml" filepath="$PROJECT_DIR$/lagou_sso_api/lagou_sso_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_sso_provider/lagou_sso_provider.iml" filepath="$PROJECT_DIR$/lagou_sso_provider/lagou_sso_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_web_api/lagou_web_api.iml" filepath="$PROJECT_DIR$/lagou_web_api/lagou_web_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_web_consumer/lagou_web_consumer.iml" filepath="$PROJECT_DIR$/lagou_web_consumer/lagou_web_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lagou_web_provider/lagou_web_provider.iml" filepath="$PROJECT_DIR$/lagou_web_provider/lagou_web_provider.iml" />
+    </modules>
+  </component>
+</project>

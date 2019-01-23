@@ -12,11 +12,9 @@
         <module>lagou_web_provider</module>
         <module>lagou_web_api</module>
         <module>lagou_common</module>
-        <module>lagou_sso_comsumer</module>
         <module>lagou_sso_provider</module>
         <module>lagou_sso_api</module>
         <module>lagou_web_comsumer</module>
-        <module>lagou_zuul-server</module>
         <module>lagou_config_server</module>
         <module>lagou_resume_provider</module>
         <module>lagou_resume_api</module>

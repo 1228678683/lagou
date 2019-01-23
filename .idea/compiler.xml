@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lagou_common" />
+        <module name="lagou_company_api" />
+        <module name="lagou_company_provider" />
+        <module name="lagou_config_server" />
+        <module name="lagou_eureka_server" />
+        <module name="lagou_resume_api" />
+        <module name="lagou_resume_provider" />
+        <module name="lagou_search_aip" />
+        <module name="lagou_search_provider" />
+        <module name="lagou_sso_api" />
+        <module name="lagou_sso_provider" />
+        <module name="lagou_web_api" />
+        <module name="lagou_web_consumer" />
+        <module name="lagou_web_provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lagou" target="1.8" />
+      <module name="lagou_common" target="1.8" />
+      <module name="lagou_company_api" target="1.8" />
+      <module name="lagou_company_provider" target="1.8" />
+      <module name="lagou_config_server" target="1.8" />
+      <module name="lagou_eureka_server" target="1.8" />
+      <module name="lagou_resume_api" target="1.8" />
+      <module name="lagou_resume_provider" target="1.8" />
+      <module name="lagou_search_aip" target="1.8" />
+      <module name="lagou_search_provider" target="1.8" />
+      <module name="lagou_sso_api" target="1.8" />
+      <module name="lagou_sso_provider" target="1.8" />
+      <module name="lagou_web_api" target="1.8" />
+      <module name="lagou_web_consumer" target="1.8" />
+      <module name="lagou_web_provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lagou_common" options="-parameters" />
+      <module name="lagou_company_api" options="-parameters" />
+      <module name="lagou_company_provider" options="-parameters" />
+      <module name="lagou_config_server" options="-parameters" />
+      <module name="lagou_eureka_server" options="-parameters" />
+      <module name="lagou_resume_api" options="-parameters" />
+      <module name="lagou_resume_provider" options="-parameters" />
+      <module name="lagou_search_aip" options="-parameters" />
+      <module name="lagou_search_provider" options="-parameters" />
+      <module name="lagou_sso_api" options="-parameters" />
+      <module name="lagou_sso_provider" options="-parameters" />
+      <module name="lagou_web_api" options="-parameters" />
+      <module name="lagou_web_consumer" options="-parameters" />
+      <module name="lagou_web_provider" options="-parameters" />
+    </option>
+  </component>
+</project>
