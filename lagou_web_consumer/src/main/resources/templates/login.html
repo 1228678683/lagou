@@ -113,11 +113,11 @@ $(function(){
 	            $.ajax({
 	            	type:'POST',
 	            	data:{email:email,password:password,autoLogin:remember, callback:callback, authType:authType, signature:signature, timestamp:timestamp},
-	            	url:ctx+'/user/login.json'
+	            	url:"sso.lg.com"+'/user/login'
 	            }).done(function(result) {
-					if(result.success){
-					 	if(result.content.loginToUrl){
-							window.location.href=result.content.loginToUrl;
+					if(result.status==200){
+					 	if(result.data.type==0){
+							window.location.href='/index';
 	            		}else{
 	            			window.location.href=ctx+'/';
 	            		} 

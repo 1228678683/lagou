@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8000
   servlet:
     context-path: /
 spring:
@@ -15,14 +15,20 @@ spring:
     prefix: classpath:/templates/ #模板前缀
     suffix: .html #模板后缀
     mode: LEGACYHTML5
+  devtools: 
+    restart:
+     enabled: false
 
 
-
+ribbon:
+  eureka:
+    enabled: true
 
 eureka:
   client:
     service-url:
-      defaultZone: http://172.242.4.71:7000/eureka
+      defaultZone: http://localhost:7000/eureka
   instance:
     instance-id: web_consumer         #定义微服务的名称
     prefer-ip-address: true                        #是否显示IP和端口
+    
